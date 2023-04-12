@@ -1,0 +1,49 @@
+@import url("./normalization.css");
+@import url("./navbar.css");
+body {
+  background-color: #F2F2F2;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fed047;
+  padding: 10rem 2rem;
+  transform: skewY(-3deg);
+}
+section > * {
+  transform: skewY(3deg);
+}
+section:nth-of-type(odd) {
+  background-color: #F2F2F2;
+}
+section:first-of-type {
+  margin-top: -10rem;
+}
+section h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem;
+  color: #60209E;
+  text-align: center;
+  font-family: "Imprima", sans-serif;
+}
+section img {
+  width: 50%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+section p {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem;
+  color: #60209E;
+  width: 100%;
+  font-family: "Imprima", sans-serif;
+}
+

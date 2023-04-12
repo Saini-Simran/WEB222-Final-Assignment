@@ -1,0 +1,211 @@
+@import url("./normalization.css");
+@import url("./navbar.css");
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+header img {
+  width: 60%;
+  height: auto;
+}
+
+main {
+  position: relative;
+  padding: 10rem 2rem;
+  margin: 10rem 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fed047;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: skewY(-5deg);
+}
+main h2 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem;
+  color: #60209E;
+  text-align: center;
+  font-family: "Imprima", sans-serif;
+}
+main .card {
+  display: flex;
+  width: 70%;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+main .card:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+main .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+main .card__content h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem;
+  color: #F2F2F2;
+  width: 100%;
+  font-family: "Imprima", sans-serif;
+}
+main .card__content p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem;
+  color: #F2F2F2;
+  width: 100%;
+  font-family: "Istok Web", sans-serif;
+}
+main .card__content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 5rem;
+  gap: 1rem;
+  background-color: #60209E;
+  border: none;
+  border-radius: 5px;
+  color: #F2F2F2;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+main .card__content .btn:hover {
+  background-color: #8F1CFF;
+}
+main .card__content .btn svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+main .card__content .btn svg path {
+  fill: #F2F2F2;
+}
+main .card__image {
+  width: 50%;
+  aspect-ratio: 16/9;
+  object-fit: fill;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .card__image img, main .card__image iframe {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 900px) {
+  main .card {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column !important;
+  }
+  main .card__content {
+    width: 100%;
+  }
+  main .card__image {
+    width: 100%;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10rem 2rem;
+  margin-top: -9rem;
+}
+section .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #60209E;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section h4 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem;
+  color: #F2F2F2;
+  text-align: center;
+  font-family: "Imprima", sans-serif;
+}
+@media (max-width: 900px) {
+  section h4 {
+    font-size: 3rem;
+  }
+}
+section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+section input {
+  width: 50%;
+  height: 5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2rem;
+  font-family: "Istok Web", sans-serif;
+}
+section button {
+  width: 50%;
+  height: 5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-family: "Istok Web", sans-serif;
+  background-color: #fed047;
+  color: #F2F2F2;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+section button:hover {
+  background-color: #8F1CFF;
+}
+

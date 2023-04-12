@@ -1,0 +1,33 @@
+@import url("./normalization.css");
+@import url("./navbar.css");
+
+section {
+  padding: 1rem 2rem;
+}
+
+h1 {
+  color: #60209E;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Imprima", sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 1rem;
+  color: #60209E;
+  width: 100%;
+  font-family: "Istok Web", sans-serif;
+}
+a{
+  color: #60209E;
+  font-family: "Istok Web", sans-serif;
+  opacity: 0.8;
+}
+a:hover{
+  opacity: 1;
+}

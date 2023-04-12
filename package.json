@@ -1,0 +1,16 @@
+{
+  "name": "web222_final_assignment",
+  "version": "1.0.0",
+  "description": "I have create website on my favourite game chess As part of Final Assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "author": "Simran Saini",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+
+}
